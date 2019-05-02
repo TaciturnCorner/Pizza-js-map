@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Pizza</title>
+
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- LESS основний файл -->
+    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <!-- LESS JavaScript компілятор -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="pizzaShop.js"></script>
+
+    <script	type="text/javascript"
+               src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBu8EfHXfhweZE-W19Uo2d_UIFrmKvOeMo">
+    </script>
+
+
+</head>
+<body>
+<div id="cart"></div>
+
+<div class="mainMenu">
+    <p><span class="name">Pizza KMA</span>
+        <span class="numb">(044) 222 5 222</span>
+        <span class="hours">24 години/ 7 днів на тиждень</span>
+        <span class="free">Безкоштовна доставка піци</span>
+    </p>
+</div>
+
+<div class="container">
+    <div class="col-sm-12 col-md-9">
+        <div class="row" id="pizza_list">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail pizza-card">
+                    <img src="assets/images/pizza_1.jpg">
+                    <div class="caption"><h3 class="bl-pizzaName">Міксовий поло</h3>
+                        <h5>М'ясна піца</h5>
+                    <p>Шинка, курка копчена, сир моцарелла, ананаси, кукурудза, петрушка, соуст оматний.</p>
+                      <p> <span class="bl-labDiamS"><img src="assets/images/size-icon.svg">: 30 </span><span class="sm">см</span>
+                          <span class="bl-labDiamB"><img src="assets/images/size-icon.svg">: 40 </span><span class="sm">см</span></p>
+
+                        <p><span class="bl-labWeightS"><img src="assets/images/weight.svg">: 430 </span><span class="gr">гр</span>
+                            <span class="bl-labWeightB"><img src="assets/images/weight.svg">: 780 </span><span class="gr">гр</span></p>
+
+                        <p><span class="bl-labPriceS"> 99 </span> <span class="grn">грн</span>
+                            <span class="bl-labPriceB"> 169 </span> <span class="grn">грн</span></p>
+                    <p>
+                        <a href="#" class="btn btn-danger bt-buySmall">Купити (м)</a>
+                        <a href="#" class="btn btn-danger bt-buyBig">Купити (в)</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail pizza-card">
+                <img src="assets/images/pizza_2.jpg">
+
+                <div class="caption"><h3 class="bl-pizzaName">BBQ</h3>
+                    <h5>М'ясна піца</h5>
+                    <p>Мисливські ковбаски, ковбаски папероні, шинка, сир домашній, шампінйони, петрушка, оливки.</p>
+                    <p> <span class="bl-labDiamS"><img src="assets/images/size-icon.svg">: 30 </span><span class="sm">см</span>
+                        <span class="bl-labDiamB"><img src="assets/images/size-icon.svg">: 40 </span><span class="sm">см</span></p>
+                    <p><span class="bl-labWeightS"><img src="assets/images/weight.svg">: 460 </span><span class="gr">гр</span>
+                        <span class="bl-labWeightB"><img src="assets/images/weight.svg">: 840 </span><span class="gr">гр</span></p>
+                    <p><span class="bl-labPriceS"> 139 </span> <span class="grn">грн</span>
+                        <span class="bl-labPriceB"> 199 </span> <span class="grn">грн</span></p>
+
+                    <p>
+                        <a href="#" class="btn btn-danger bt-buySmall">Купити (м)</a>
+                        <a href="#" class="btn btn-danger bt-buyBig">Купити (в)</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail pizza-card">
+                <img src="assets/images/pizza_3.jpg">
+
+                <div class="caption"><h3 class="bl-pizzaName">Маргарита</h3>
+                    <h5>Томатна піца</h5>
+                    <p>Помідори, часник, оливкове масло, орегано, сир моцарелла, сир пармезан, базилік.</p>
+                    <p> <span class="bl-labDiamS"><img src="assets/images/size-icon.svg">: 30 </span><span class="sm">см</span>
+                        <span class="bl-labDiamB"><img src="assets/images/size-icon.svg">: 40 </span><span class="sm">см</span></p>
+                    <p><span class="bl-labWeightS"><img src="assets/images/weight.svg">: 370 </span><span class="gr">гр</span>
+                        <span class="bl-labWeightB"><img src="assets/images/weight.svg">: 780 </span><span class="gr">гр</span></p>
+                    <p><span class="bl-labPriceS"> 115 </span>  <span class="grn">грн</span>
+                        <span class="bl-labPriceB"> 179 </span> <span class="grn">грн</span></p>
+
+                    <p>
+                        <a href="#" class="btn btn-danger bt-buySmall">Купити (м)</a>
+                        <a href="#" class="btn btn-danger bt-buyBig">Купити (в)</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="col-12 col md-3">
+
+        <p><h3>Замовлення <span class="label label-danger bl-numbOrders">3</span>
+        <span class ="label label-default bl-clearAll">Очистити замовлення</span></h3></p>
+        <div class="bl-product">
+        <p><h4 class="bl-pizzaCopyName"> Міксовий поло </h4></p>
+            <p><span class="bl-copySize"><img src="assets/images/size-icon.svg">: 30 </span><span class="sm">см</span>
+                <span class="bl-copyWeight"><img src="assets/images/weight.svg">: 430 </span><span class="gr">гр</span> </p>
+        <span class="label label-default bl-labelPrice">99</span><span class="grn">грн</span>
+        <button type="button" class="btn btn-danger bt-minus">-</button>
+        <span class="label label-default bl-labelNum">1</span>
+        <button type="button" class="btn btn-success bt-plus">+</button>
+        <button type="button" class="btn btn-light bt-x">Х</button>
+        </div>
+
+        <div class="bl-product">
+        <p><h4 class="bl-pizzaCopyName"> BBQ </h4></p>
+            <p><span class="bl-copySize"><img src="assets/images/size-icon.svg">: 30 </span><span class="sm">см</span>
+                <span class="bl-copyWeight"><img src="assets/images/weight.svg">: 460 </span><span class="gr">гр</span> </p>
+        <span class="label label-default bl-labelPrice">139</span> <span class="grn">грн</span>
+        <button type="button" class="btn btn-danger bt-minus">-</button>
+        <span class="label label-default bl-labelNum">1</span>
+        <button type="button" class="btn btn-success bt-plus">+</button>
+        <button type="button" class="btn btn-light bt-x">Х</button>
+        </div>
+
+        <div class="bl-product">
+        <p><h4 class="bl-pizzaCopyName"> Маргарита </h4></p>
+            <p><span class="bl-copySize"><img src="assets/images/size-icon.svg">: 30 </span><span class="sm">см</span>
+                <span class="bl-copyWeight"><img src="assets/images/weight.svg">: 370 </span><span class="gr">гр</span> </p>
+        <span class="label label-default bl-labelPrice">115</span> <span class="grn">грн</span>
+        <button type="button" class="btn btn-danger bt-minus">-</button>
+        <span class="label label-default bl-labelNum">1</span>
+        <button type="button" class="btn btn-success bt-plus">+</button>
+        <button type="button" class="btn btn-light bt-x">Х</button>
+        </div>
+
+        <div id="clonePizza" class="bl-product">
+            <p><h4 class="bl-pizzaCopyName"> Міксовий поло </h4></p>
+            <p><img src="assets/images/size-icon.svg"><span class="bl-copySize">: 30 </span><span class="sm">см</span>
+                <img src="assets/images/weight.svg"><span class="bl-copyWeight">: 430 </span><span class="gr">гр</span> </p>
+            <span class="label label-default bl-labelPrice">99</span><span class="grn">грн</span>
+            <button type="button" class="btn btn-danger bt-minus">-</button>
+            <span class="label label-default bl-labelNum">1</span>
+            <button type="button" class="btn btn-success bt-plus">+</button>
+            <button type="button" class="btn btn-light bt-x">Х</button>
+        </div>
+
+        <div id="map">
+        </div>
+
+
+
+
+    </div>
+
+
+</div>
+
+<!-- jQuery JavaScript -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+
+<!--Bootsrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!--Own JavaScript -->
+<!--<script type="text/javascript"  src="assets/js/main.js"> </script>-->
+</body>
+</html>

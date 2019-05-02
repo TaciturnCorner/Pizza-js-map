@@ -1,0 +1,131 @@
+.bl-labelNum {
+    font-size: 100%;
+    color: black;
+    background: white;
+    margin-top:5px;
+    width: 10px;
+}
+
+.bl-labelPrice {
+    font-size: 100%;
+    color: black;
+    background: white;
+    margin-top:5px;
+    width: 10px;
+}
+
+.bl-product{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.bt-minus{
+    position:absolute;
+    left:940px;
+    border-radius: 100%;
+}
+
+.bl-labelNum{
+    position:absolute;
+    left:990px;
+}
+
+.bl-clearAll{
+    color: black;
+    background: white;
+    font-size: 50%;
+    font-style: oblique;
+}
+
+.bl-numbOrders{
+    border-radius: 100%;
+}
+
+.bt-plus{
+    position:absolute;
+    left:1040px;
+    border-radius: 100%;
+}
+
+.bt-x{
+    position:absolute;
+    left:1090px;
+    border-radius: 100%;
+}
+
+.bl-labDiamB{
+    margin-left: 35px;
+}
+
+.bl-labWeightB{
+    margin-left: 30px;
+}
+
+.bl-labPriceB{
+    font-size: 150%;
+    margin-left: 25px;
+}
+
+.bl-labDiamS{
+    margin-left: 20px;
+}
+
+.bl-labWeightS{
+    margin-left: 20px;
+}
+
+.bl-labPriceS{
+    font-size: 150%;
+    margin-left: 20px;
+
+}
+
+.mainMenu{
+    font-size: 200%;
+    position: absolute;
+    opacity: 0.5%;
+    z-index: 4;
+    padding: .1em 1em calc(.1em + 2px);
+    text-decoration: none;
+    color: white;
+    background: darkred;
+    height: 55px;
+    width: 953px;
+    transition:	all	1s	ease;
+}
+
+.numb{
+    font-size: 70%;
+    margin-left: 20px;
+}
+
+.hours{
+    font-size: 50%;
+    margin-left: 50px;
+}
+
+
+
+.free{
+    font-size: 50%;
+    margin-left: 50px;
+}
+
+.md-3 {
+    z-index: 4;
+}
+
+.col-md-9 {
+    margin-top: 70px;
+}
+
+#clonePizza{
+    position: absolute;
+    visibility: hidden;
+}
+
+#map {
+    height: 100%;
+}
+
+
